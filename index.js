@@ -21,7 +21,7 @@ const displayEntries = () =>{
 
    const tableEntries = entries.map((entry)=>{
         const nameCell = `<td class='border px-4 py-2'>${entry.name}</td>`
-        const emailCell = `<td class='border px-4 py-2'>${entry.Email}</td>`
+        const emailCell = `<td class='border px-4 py-2'>${entry.email}</td>`
         const passwordCell = `<td class='border px-4 py-2'>${entry.password}</td>`
         const dobCell = `<td class='border px-4 py-2'>${entry.dob}</td>`
         const acceptTermsCell = `<td class='border px-4 py-2'>${entry.AgreeTerms}</td>`

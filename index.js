@@ -35,7 +35,7 @@ const table =`<table class='table-auto w-full'>
     <th class='px-4 py-2 '>email </th>
     <th class='px-4 py-2 '>Password </th>
     <th class='px-4 py-2 '>Dob </th>
-    <th class='px-4 py-2 '>AgreeTerms </th>
+    <th class='px-4 py-2 '>Accepted Terms</th>
     </tr>${tableEntries}
 </table>`;
 
@@ -49,7 +49,7 @@ const saveuserForm = (event) =>{
     event.preventDefault();
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const password = document.getElementById("pass").value;
+    const password = document.getElementById("password").value;
     const dob = document.getElementById("dob").value;
 
     const AgreeTerms = document.getElementById("AgreeTerms").checked;

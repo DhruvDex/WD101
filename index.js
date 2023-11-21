@@ -35,7 +35,7 @@ const table =`<table class='table-auto w-full'>
     <th class='px-4 py-2 '>email </th>
     <th class='px-4 py-2 '>Password </th>
     <th class='px-4 py-2 '>Dob </th>
-    <th class='px-4 py-2 '>Accepted Terms</th>
+    <th class='px-4 py-2 '>Accepted Terms?</th>
     </tr>${tableEntries}
 </table>`;
 

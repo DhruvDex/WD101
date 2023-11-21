@@ -44,6 +44,38 @@ details.innerHTML = table;
 
 }
 
+
+const saveUserForm = (event)=>{
+event.preventDefault();
+const Name = document.getElementById('name').value
+const email = document.getElementById('email').value
+const password = document.getElementById('password').value
+const dob = document.getElementById('dob').value
+const acceptTerms = document.getElementById('AgreeTerms').checked
+var currentYear = new Date().getFullYear();
+var birthYear = dob.split("-");
+let year=birthYear[0]
+var age = currentYear-year
+console.log({age,currentYear,birthYear});
+    if(age < 18 || age > 55){
+    document.getElementById('dob').style='border:1px solid red'
+  return  alert("Age must be between 18 and 55")
+
+}else{
+    document.getElementById('dob').style='border:none'
+
+    const entry ={
+        Name,
+        email,
+        password,
+        dob,
+        AgreeTerms,
+     }
+
+
+
+
+
 const saveuserForm = (event) =>{
     event.preventDefault();
     const name = document.getElementById("name").value;
